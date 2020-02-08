@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>News Blog - UIkit 3 KickOff</title>
+		<link rel="icon" href="img/favicon.ico">
+		<!-- CSS FILES -->
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/uikit@latest/dist/css/uikit.min.css">
+        <link rel="stylesheet" type="text/css" href="css/people_form.css">
+		<style>
+			nav.nav-scroll {
+				position: relative;
+				z-index: 2;
+				height: 2rem;
+				box-sizing: border-box;
+				overflow-y: hidden;
+				padding: 1rem;
+				border-top: 1px solid rgba(0,0,0,0.075);
+				line-height: 1em;
+			}
+			nav.nav-scroll > ul {
+				overflow-x: auto;
+				text-align: center;
+				white-space: nowrap;
+				-webkit-overflow-scrolling: touch;
+				padding-bottom: 1rem;
+			}
+			nav.nav-scroll > ul > li > a {
+				font-weight: 500;
+			}
+			.news-slide > li > .uk-card {
+				box-shadow: none;
+				border:  1px solid rgba(0,0,0,0.075);
+			}
+			h1, h2, h3, h4, h5, h6 {
+				font-weight: 700;
+			}
+			.uk-logo > img {
+				height: 58px;
+			}
+			#header.uk-sticky-below {
+				box-shadow: 0 2px 14px 0 rgba(0,0,0,0.07);
+			}
+			
+		</style>
+	</head>
+	<body>
+		<!--HEADER-->
+		<header id="header" style="background-color: #fff;" data-uk-sticky="show-on-up: true; animation: uk-animation-fade; media: @l">
+			<div class="uk-container">
+				<nav id="navbar" data-uk-navbar="mode: click;">
+					<div class="uk-navbar-left nav-overlay uk-visible@m">
+						<ul class="uk-navbar-nav">
+							<li>
+								<a href="#" title="Subscribe">Subscribe</a>
+							</li>
+							<li>
+								<a href="#" title="Sign Up">Sign Up</a>
+							</li>
+						</ul>
+					</div>
+					<div class="uk-navbar-center nav-overlay">
+						<a class="uk-navbar-item uk-logo" href="#" title="Logo"><img src="img/n-logo.png" alt="Logo"></a>
+					</div>
+					<div class="uk-navbar-right nav-overlay">
+						<a class="uk-navbar-toggle uk-visible@m" data-uk-search-icon data-uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
+						<div class="uk-navbar-item">
+							<a class="uk-visible@s" style="margin-right: 4px" href="#" data-uk-icon="facebook"></a>
+							<a class="uk-visible@s" style="margin-right: 4px" href="#" data-uk-icon="twitter"></a>
+							<a class="uk-visible@s" style="margin-right: 4px" href="#" data-uk-icon="instagram"></a>
+							<a class="uk-navbar-toggle uk-hidden@m" data-uk-toggle data-uk-navbar-toggle-icon href="#offcanvas-nav"></a>
+						</div>
+						
+                    </div>
+				</nav>
+			</div>
+		</header>
+		<!--/HEADER-->
+		<!-- NAVIGATION -->
+		<div class="uk-container uk-center">
+			<nav class="nav-scroll">
+				<ul class="uk-subnav uk-flex-between uk-flex-nowrap">
+					<li class="uk-active"><a href="#">Analytics</a></li>
+					<li><a href="#">Monitoring</a></li>
+				</ul>
+			</nav>
+		</div>
+		<!-- /NAVIGATION -->
+		<!-- HERO -->
+		<section class="uk-section uk-section-small">
+			<div class="uk-container os-contain">
+                <h3 class="uk-margin-small-bottom uk-margin-remove-adjacent uk-text-bold">FORM COLLECTING DATA ON PREVIOUSLY ENDANGERED SPECIES</h3>
+				<form>
+                    <label class="uk-form-label" for="form-horizontal-text">Species</label>
+                    <select class="uk-select">
+                        <option value="porcupine">porcupine</option>
+                        <option value="Gorilla">Gorilla</option>
+                    </select>
+                    
+                    <label class="uk-form-label" for="form-horizontal-text">Location</label>
+                    <select class="uk-select">
+                        <option value="Yala">Yala</option>
+                        <option value="Ogoja">Ogoja</option>
+                        <option value="Boki">Boki</option>
+                    </select>
+                    
+                    <label class="uk-form-label" for="form-horizontal-text">Period</label>
+                    <select class="uk-select">
+                        <option value="farmer">don't forget to include the time stamp</option>
+                        <option value="bricklayer">bricklayer</option>
+                        <option value="fisherman">fisherman</option>
+                    </select>
+                    </form>
+                <a class="uk-button uk-button-primary os-button" href="">DONE</a>
+				</div>
+		</section>
+        
+		
+		<!-- HERO -->
+		<!-- FEATURED -->
+		
+		<!--/CONTENT-->
+		
+		
+		<!--FOOTER-->
+		<footer class="uk-section uk-section-small uk-section-muted">
+			<div class="uk-container">
+				<p class="uk-text-small uk-text-center">Copyright 2019 - | Built with Stuff</p>
+			</div>
+		</footer>
+		
+		<script src="https://cdn.jsdelivr.net/npm/uikit@latest/dist/js/uikit.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/uikit@latest/dist/js/uikit-icons.min.js"></script>
+		
+	</body>
+</html>
