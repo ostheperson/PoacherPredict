@@ -1,35 +1,114 @@
 <!DOCTYPE html>
-<html>
-    <head>
-		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/uikit@latest/dist/css/uikit.min.css">
-        <link rel="stylesheet" type="text/css" href="css/form.css">
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>News Blog - UIkit 3 KickOff</title>
+		<link rel="icon" href="img/favicon.ico">
+		<!-- CSS FILES -->
         <link rel="stylesheet" type="text/css" href="css/uikit.min.css">
         <link rel="stylesheet" type="text/css" href="css/watch_list.css">
-        <title></title>
-    </head>
-    <body>
-        
-        <div class="uk-flex uk-flex-center uk-flex-middle uk-height-viewport os_other">
-    
-        <div class="uk-container uk-container-expand os_container"> 
-            <div class="uk-text-center uk-margin-small-bottom">
-                <div class ="uk-flex-center os_pic">
-                    <img src="img/logo_transparent.png">
-                </div>
-                <h3 class="uk-h3">Redesigning waste management</h3>
-                <a class="uk-button uk-button-primary" href="signUp.jsp">Sign Up today</a>
-                <a class="uk-button uk-button-secondary" href="user_login.jsp">User Login</a>
-                <a class="uk-button uk-button-danger" href="admin_login.jsp">Admin Login</a>
+		<style>
+			nav.nav-scroll {
+				position: relative;
+				z-index: 2;
+				height: 2rem;
+				box-sizing: border-box;
+				overflow-y: hidden;
+				padding: 1rem;
+				border-top: 1px solid rgba(0,0,0,0.075);
+				line-height: 1em;
+			}
+			nav.nav-scroll > ul {
+				overflow-x: auto;
+				text-align: center;
+				white-space: nowrap;
+				-webkit-overflow-scrolling: touch;
+				padding-bottom: 1rem;
+			}
+			nav.nav-scroll > ul > li > a {
+				font-weight: 500;
+			}
+			.news-slide > li > .uk-card {
+				box-shadow: none;
+				border:  1px solid rgba(0,0,0,0.075);
+			}
+			h1, h2, h3, h4, h5, h6 {
+				font-weight: 700;
+			}
+			.uk-logo > img {
+				height: 58px;
+			}
+			#header.uk-sticky-below {
+				box-shadow: 0 2px 14px 0 rgba(0,0,0,0.07);
+			}
+		</style>
+	</head>
+	<body>
+		<!--HEADER-->
+		<header id="header" style="background-color: #fff;" data-uk-sticky="show-on-up: true; animation: uk-animation-fade; media: @l">
+			<div class="uk-container">
+				<nav id="navbar" data-uk-navbar="mode: click;">
+					<div class="uk-navbar-left nav-overlay uk-visible@m">
+						<ul class="uk-navbar-nav">
+							<li>
+								<a href="#" title="Subscribe">Subscribe</a>
+							</li>
+							<li>
+								<a href="#" title="Sign Up">Sign Up</a>
+							</li>
+						</ul>
+					</div>
+					<div class="uk-navbar-center nav-overlay">
+						<a class="uk-navbar-item uk-logo" href="#" title="Logo"><img src="img/n-logo.png" alt="Logo"></a>
+					</div>
+					<div class="uk-navbar-right nav-overlay">
+						<a class="uk-navbar-toggle uk-visible@m" data-uk-search-icon data-uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
+						<div class="uk-navbar-item">
+							<a class="uk-visible@s" style="margin-right: 4px" href="#" data-uk-icon="facebook"></a>
+							<a class="uk-visible@s" style="margin-right: 4px" href="#" data-uk-icon="twitter"></a>
+							<a class="uk-visible@s" style="margin-right: 4px" href="#" data-uk-icon="instagram"></a>
+							<a class="uk-navbar-toggle uk-hidden@m" data-uk-toggle data-uk-navbar-toggle-icon href="#offcanvas-nav"></a>
+                        </div>
+					</div>
+					<div class="nav-overlay uk-navbar-left uk-flex-1" hidden>
+						<div class="uk-navbar-item uk-width-expand">
+							<form class="uk-search uk-search-navbar uk-width-1-1">
+								<input class="uk-search-input" type="search" placeholder="Search...">
+							</form>
+						</div>
+						<a class="uk-navbar-toggle" data-uk-close data-uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<!--/HEADER-->
+		<!-- NAVIGATION -->
+		<div class="uk-container uk-center">
+			<nav class="nav-scroll">
+				<ul class="uk-subnav uk-flex-between uk-flex-nowrap">
+					<li class="uk-active"><a href="#">Analytics</a></li>
+					<li><a href="#">Monitoring</a></li>
+				</ul>
+			</nav>
+		</div>
+		<!-- /NAVIGATION -->
+		
+
+		<div class="uk-container uk-container-center os-container">
+            <div class="os-other-con">
+                <h1>Month Watchlist</h1>
             </div>
-        
-            <div class="uk-text-center uk-margin-top">
-                <h4 class="uk-h4">Better waste managment for EVERYONE!!</h4>
-                <h5 class="uk-h5 ">Thanks for visiting!</h5>
-            </div>
-            <div class="uk-position-bottom-left uk-position-absolute uk-margin-left uk-margin-small-bottom">
-                <span class="uk-text-meta">&copy; 2019 by OS</span>
-            </div>
-        </div>
-        </div>
-    </body>
+		</div><!-- HERO -->
+		
+		<footer class="uk-section uk-section-small uk-section-muted">
+			<div class="uk-container">
+				<p class="uk-text-small uk-text-center">Copyright 2019 -  | Built with Stuff</p>
+			</div>
+		</footer>
+		<script src="https://cdn.jsdelivr.net/npm/uikit@latest/dist/js/uikit.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/uikit@latest/dist/js/uikit-icons.min.js"></script>
+		
+	</body>
 </html>
+
