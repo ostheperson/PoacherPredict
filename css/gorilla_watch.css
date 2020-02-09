@@ -14,3 +14,15 @@
 .os-description-data {
     margin: 40px;
 }
+
+.points {
+    float: right;
+}
+
+.other_contain {
+    float:right;
+    width: 200px
+    margin: 30px;
+    margin-left: 400px;
+    padding: 50px
+}
