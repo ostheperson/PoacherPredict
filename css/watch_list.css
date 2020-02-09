@@ -3,5 +3,11 @@
 }
 
 .os-other-con {
-    
+    max-width: 700px;
+}
+
+.os-footer{
+    position: relative;
+    clear: both;
+    bottom: -430px;
 }

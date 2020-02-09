@@ -1,0 +1,16 @@
+.os-container {
+    padding: 10px;
+    margin-top: 50px;
+    height: 600px;
+    width: 400px;
+    border-radius: 2px;
+    
+}
+
+.os-description-label {
+    margin: 30px;
+}
+
+.os-description-data {
+    margin: 40px;
+}
